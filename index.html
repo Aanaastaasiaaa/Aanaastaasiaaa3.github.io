@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ссылки задание 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="site-header">
+    <div class="container">
+        <div class="header-top">
+            <div class="ca">
+                <img src="logo.png" alt="logo" width="180">
+            </div>
+            <nav class="main-nav">
+                <a href="http://kubsu.ru">Главная</a>
+                <a href="https://kubsu.ru/university">Об университете</a>
+                <a href="https://kubsu.ru/ru/university/departments">Факультеты</a>
+            </nav>
+        </div>
+        <div class="header-bottom">
+
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <div class="content-wrapper">
+
+            <section id="table-section" class="content-section table-section">
+                <h2 class="section-title">Таблица факультетов</h2>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                        <tr>
+                            <th>Факультет</th>
+                            <th>Декан</th>
+                            <th>Количество студентов</th>
+                            <th>Аудитории</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Компьютерных технологий и прикладной математики</td>
+                            <td>Колотий А.Д.</td>
+                            <td>1000</td>
+
+                            <td>100-200</td>
+                        </tr>
+                        <tr>
+                            <td>Филологический</td>
+                            <td>Сайченко В.В.</td>
+                            <td>900</td>
+
+                            <td>300-400</td>
+                        </tr>
+                        <tr>
+                            <td>Журналистики</td>
+                            <td>Касьянов В.В.</td>
+                            <td>1100</td>
+
+                            <td>500-600</td>
+                        </tr>
+                        <tr>
+                            <td>Химии и высоких технологий</td>
+                            <td>Костырина Т.В.</td>
+                            <td>800</td>
+                            <td>rowspan="2">1-100</td>
+                        </tr>
+                        <tr>
+                            <td>Юридический</td>
+                            <td>Потапенко С.В.</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr>
+                            <td>Физико-технический</td>
+                            <td>Строганова Е.В.</td>
+                            <td>1000</td>
+
+                            <td>600-700</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <section class="links-section">
+                <h2>Ссылки</h2>
+                <ol class="links-list">
+                    <li><a href="http://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+                    <li><a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+                    <li><a href="https://kubsu.ru/"><img src="image.jpg" alt="КубГУ" width="350"></a></li>
+                    <li><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
+                    <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+                    <li><a href="#form">Ссылка на фрагмент текущей страницы (форма)</a></li>
+                    <li><a href="https://kubsu.ru/?faculty=fctipm&area=mo&group=22">Ссылка с тремя параметрами</a></li>
+                    <li><a href="https://moodle.kubsu.ru/course/view.php?id=1">>Ссылка с параметром id в URL</a></li>
+                    <li><a href="page.html">Относительная на страницу в текущем каталоге</a></li>
+                    <li><a href="about/page.html">Относительная на страницу в каталоге about</a></li>
+                    <li><a href="../page.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+                    <li><a href="../../page.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+                    <li>Это <a href="https://kubsu.ru/">контекстная ссылка</a> в тексте абзаца</li>
+                    <li><a href="https://wikipedia.org/wiki/HTML#History">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                    <li>
+                        <p>Ссылка из областей картинки</p>
+                        <img src="image1.jpg" alt="Картинка с разными областями" usemap="#car"
+                             width="300" height="300">
+                        <map name="car">
+                            <area shape="rect" href="https://kubsu.ru/" coords="0,0,1100,1100" alt="rect">
+                            <area shape="circle" href="https://www.kubsu.ru/news" coords="1650,800,550" alt="circle">
+                        </map>
+
+                    </li>
+                    <li>Ссылка с пустым href<a href="">Cсылка</a></li>
+                    <li>Ссылка без href<a>Ссылка</a></li>
+                    <li>Ссылка с запретом перехода для поисковиков<a href="https://kubsu.ru/no-follow" rel="nofollow">Ссылка</a></li>
+                    <li><a href="https://kubsu.ru/" rel="noindex">Запрещенная для индексации поисковиками</a></li>
+                    <li>
+                        Нумерованный список ссылок с подписями title:
+                        <ol>
+                            <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
+
+                            <li><a href="https://kubsu.ru/university" title="Информация об университете">Об университете</a></li>
+                            <li><a href="https://kubsu.ru/education" title="Образовательные программы">Образование</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+                </ol>
+            </section>
+        </div>
+
+        <h2>Форма обратной связи</h2>
+
+        <form action="/" method="post">
+            <div>
+                <label>ФИО:
+                    <input type="text" name="name" placeholder="ФИО" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>Телефон:
+                    <input type="tel" name="tel" placeholder="+7 (999) 999-99-99" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>Email:
+                    <input type="email" name="email" placeholder="...mail.ru" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>День рождения:
+                    <input type="date" name="birthday" value="" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                Пол:
+                <label>
+                    <input type="radio" checked name="sex" value="Мужской">
+                    Мужской
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="Женский">
+                    Женский
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>
+                    Любимые языкы программирования: <br>
+                    <select name="lang" multiple="multiple" size="11" required>
+                        <option value="Pascal">Pascal</option>
+                        <option value="C">C</option>
+                        <option value="Cpp" selected>C++</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Python" selected>Python</option>
+                        <option value="Java" selected>Java</option>
+                        <option value="Haskel">Haskel</option>
+                        <option value="Clojure">Clojure</option>
+                        <option value="Prolog">Prolog</option>
+                        <option value="Scala">Scala</option>
+                    </select>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>Биография: <br>
+                    <textarea cols="50" rows="5" required></textarea>
+                </label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="check-1" required>
+                    C контрактом ознакомлен(а)</label>
+            </div>
+            <div>
+                <button type="submit" style="margin: 10px;">Сохранить</button>
+            </div>
+        </form>
+    </div>
+</main>
+        <p>&copy;2025 Болобан Анастасия. Кубанский Государственный Университет</p>
+    </div>
+</footer>
+</body>
+</html>
