@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 4 - Bootstrap верстка</title>
 
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -73,18 +74,17 @@
     </style>
 </head>
 <body>
-
 <header class="site-header">
     <div class="container">
         <div class="row align-items-center py-3">
+
             <div class="col-12 col-md-3 text-center text-md-left mb-2 mb-md-0">
                 <img src="logo.png" alt="logo" class="logo-img" width="180">
             </div>
 
             <div class="col-12 col-md-6 text-center">
-                <h1 class="h3 mb-0 text-white">Задание 4</h1>
+                <h1 class="h3 mb-0 text-white">Задание 4 </h1>
             </div>
-
 
             <nav class="col-12 col-md-3 main-nav">
                 <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-end text-center">
@@ -100,54 +100,13 @@
 <main class="main py-4">
     <div class="container">
         <div class="row">
-            <section class="col-12 links-section p-4 mb-4">
-                <h2 class="section-title">Ссылки</h2>
-                <ol class="links-list pl-3">
-                    <li class="mb-2"><a href="http://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
-                    <li class="mb-2"><a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
-                    <li><a href="https://kubsu.ru/"><img src="image.jpg" alt="КубГУ" width="350"></a></li>a>
-                    </li>
-                    <li class="mb-2"><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
-                    <li class="mb-2"><a href="/">Сокращенная ссылка на главную страницу</a></li>
-                    <li class="mb-2"><a href="#form">Ссылка на фрагмент текущей страницы (форма)</a></li>
-                    <li class="mb-2"><a href="https://kubsu.ru/?faculty=fctipm&area=mo&group=22">Ссылка с тремя параметрами</a></li>
-                    <li class="mb-2"><a href="https://moodle.kubsu.ru/course/view.php?id=1">Ссылка с параметром id в URL</a></li>
-                    <li class="mb-2"><a href="page.html">Относительная на страницу в текущем каталоге</a></li>
-                    <li class="mb-2"><a href="about/page.html">Относительная на страницу в каталоге about</a></li>
-                    <li class="mb-2"><a href="../page.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
-                    <li class="mb-2"><a href="../../page.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
-                    <li class="mb-2">Это <a href="https://kubsu.ru/">контекстная ссылка</a> в тексте абзаца</li>
-                    <li class="mb-2"><a href="https://wikipedia.org/wiki/HTML#History">Ссылка на фрагмент страницы стороннего сайта</a></li>
-                    <li>
-                        <p>Ссылка из областей картинки</p>
-                        <img src="image1.jpg" alt="Картинка с разными областями" usemap="#car"
-                             width="300" height="300">
-                        <map name="car">
-                            <area shape="rect" href="https://kubsu.ru/" coords="0,0,150,150" alt="rect">
-                            <area shape="circle" href="https://www.kubsu.ru/news" coords="225,150,150" alt="circle">
-                        </map>
 
-                    </li>
-                    <li class="mb-2">Ссылка с пустым href<a href="" class="ml-1">Cсылка</a></li>
-                    <li class="mb-2">Ссылка без href<a class="ml-1">Ссылка</a></li>
-                    <li class="mb-2">Ссылка с запретом перехода для поисковиков<a href="https://kubsu.ru/no-follow" rel="nofollow" class="ml-1">Ссылка</a></li>
-                    <li class="mb-2"><a href="https://kubsu.ru/" rel="noindex">Запрещенная для индексации поисковиками</a></li>
-                    <li class="mb-2">
-                        Нумерованный список ссылок с подписями title:
-                        <ol class="mt-2">
-                            <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
-                            <li><a href="https://kubsu.ru/university" title="Информация об университете">Об университете</a></li>
-                            <li><a href="https://kubsu.ru/education" title="Образовательные программы">Образование</a></li>
-                        </ol>
-                    </li>
-                    <li class="mb-2"><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
-                </ol>
-            </section>
-
-            <section class="col-12 table-section p-4 mb-4">
+            <section class="col-12 table-section p-4 mb-4 order-1 order-md-2">
                 <h2 class="section-title">Таблица факультетов</h2>
                 <div class="table-responsive">
                     <table class="table table-bordered data-table">
+
+                        > Anastasia:
                         <thead>
                         <tr>
                             <th>Факультет</th>
@@ -183,7 +142,7 @@
                         </tr>
                         <tr>
                             <td>Юридический</td>
-                            <td>Потапенко С.В.</td>
+                            <td>Потапенko С.В.</td>
                             <td>1200</td>
                             <td rowspan="2">600-700</td>
                         </tr>
@@ -195,6 +154,49 @@
                         </tbody>
                     </table>
                 </div>
+            </section>
+
+            <section class="col-12 links-section p-4 mb-4 order-2 order-md-1">
+                <h2 class="section-title">Ссылки</h2>
+                <ol class="links-list pl-3">
+                    <li class="mb-2"><a href="http://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+                    <li class="mb-2"><a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+                    <li><a href="https://kubsu.ru/"><img src="image.jpg" alt="КубГУ" width="350"></a></li>
+                    <li class="mb-2"><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
+                    <li class="mb-2"><a href="/">Сокращенная ссылка на главную страницу</a></li>
+                    <li class="mb-2"><a href="#form">Ссылка на фрагмент текущей страницы (форма)</a></li>
+                    <li class="mb-2"><a href="https://kubsu.ru/?faculty=fctipm&area=mo&group=22">Ссылка с тремя параметрами</a></li>
+                    <li class="mb-2"><a href="https://moodle.kubsu.ru/course/view.php?id=1">Ссылка с параметром id в URL</a></li>
+                    <li class="mb-2"><a href="page.html">Относительная на страницу в текущем каталоге</a></li>
+                    <li class="mb-2"><a href="about/page.html">Относительная на страницу в каталоге about</a></li>
+                    <li class="mb-2"><a href="../page.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+                    <li class="mb-2"><a href="../../page.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+                    <li class="mb-2">Это <a href="https://kubsu.ru/">контекстная ссылка</a> в тексте абзаца</li>
+                    <li class="mb-2"><a href="https://wikipedia.org/wiki/HTML#History">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                    <li>
+                        <p>Ссылка из областей картинки</p>
+                        <img src="image1.jpg" alt="Картинка с разными областями" usemap="#car"
+                             width="300" height="300">
+                        <map name="car">
+                            <area shape="rect" href="https://kubsu.ru/" coords="0,0,150,150" alt="rect">
+                            <area shape="circle" href="https://www.kubsu.ru/news" coords="225,150,150" alt="circle">
+                        </map>
+
+                    </li>
+                    <li class="mb-2">Ссылка с пустым href<a href="" class="ml-1">Cсылка</a></li>
+                    <li class="mb-2">Ссылка без href<a class="ml-1">Ссылка</a></li>
+                    <li class="mb-2">Ссылка с запретом перехода для поисковиков<a href="https://kubsu.ru/no-follow" rel="nofollow" class="ml-1">Ссылка</a></li>
+                    <li class="mb-2"><a href="https://kubsu.ru/" rel="noindex">Запрещенная для индексации поисковиками</a></li>
+                    <li class="mb-2">
+                        Нумерованный список ссылок с подписями title:
+                        <ol class="mt-2">
+                            <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
+                            <li><a href="https://kubsu.ru/university" title="Информация об университете">Об университете</a></li>
+                            <li><a href="https://kubsu.ru/education" title="Образовательные программы">Образование</a></li>
+                        </ol>
+                    </li>
+                    <li class="mb-2"><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+                </ol>
             </section>
         </div>
 
