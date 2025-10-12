@@ -3,38 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ссылки задание 2</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Задание 4 - Bootstrap верстка</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        .site-header {
+            background-color: #3CB371;
+        }
+
+        .main-nav a {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        .main-nav a:hover {
+            color: #e0e0e0 !important;
+        }
+
+        .logo-img {
+            border-radius: 8px;
+        }
+
+        .links-section, .table-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            color: #3CB371;
+            border-bottom: 2px solid #3CB371;
+            padding-bottom: 10px;
+        }
+
+        .data-table th {
+            background-color: #3CB371;
+            color: white;
+        }
+
+        .data-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .links-list img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .form-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .site-footer {
+            background-color: #3CB371;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-<header id="site-header">
-    <div class="container">
-        <div class="header-top">
-            <div class="ca">
-                <img src="logo.png" alt="logo" width="180">
-            </div>
-            <div class="site-title">
-                <h1>Задание 2</h1>
-            </div>
-            <nav class="main-nav">
-                <a href="http://kubsu.ru">Главная</a>
-                <a href="https://kubsu.ru/university">Об университете</a>
-                <a href="https://kubsu.ru/ru/university/departments">Факультеты</a>
-            </nav>
-        </div>
-        <div class="header-bottom">
 
+<header class="site-header">
+    <div class="container">
+        <div class="row align-items-center py-3">
+            <div class="col-12 col-md-3 text-center text-md-left mb-2 mb-md-0">
+                <img src="logo.png" alt="logo" class="logo-img" width="180">
+            </div>
+
+            <div class="col-12 col-md-6 text-center">
+                <h1 class="h3 mb-0 text-white">Задание </h1>
+            </div>
+
+
+            <nav class="col-12 col-md-3 main-nav">
+                <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-end text-center">
+                    <a href="http://kubsu.ru" class="mx-1 my-1 my-md-0">Главная</a>
+                    <a href="https://kubsu.ru/university" class="mx-1 my-1 my-md-0">Об университете</a>
+                    <a href="https://kubsu.ru/ru/university/departments" class="mx-1 my-1 my-md-0">Факультеты</a>
+                </div>
+            </nav>
         </div>
     </div>
 </header>
-<main class="main">
-    <div class="container">
-        <div class="content-wrapper">
 
-            <section id="table-section" class="content-section table-section">
+<main class="main py-4">
+    <div class="container">
+        <div class="row">
+            <section class="col-12 links-section p-4 mb-4">
+                <h2 class="section-title">Ссылки</h2>
+                <ol class="links-list pl-3">
+                    <li class="mb-2"><a href="http://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+                    <li class="mb-2"><a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+                    <li class="mb-2">
+                        <a href="https://kubsu.ru/">
+                            <img src="image.jpg" alt="КубГУ" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="mb-2"><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
+                    <li class="mb-2"><a href="/">Сокращенная ссылка на главную страницу</a></li>
+                    <li class="mb-2"><a href="#form">Ссылка на фрагмент текущей страницы (форма)</a></li>
+                    <li class="mb-2"><a href="https://kubsu.ru/?faculty=fctipm&area=mo&group=22">Ссылка с тремя параметрами</a></li>
+                    <li class="mb-2"><a href="https://moodle.kubsu.ru/course/view.php?id=1">Ссылка с параметром id в URL</a></li>
+                    <li class="mb-2"><a href="page.html">Относительная на страницу в текущем каталоге</a></li>
+                    <li class="mb-2"><a href="about/page.html">Относительная на страницу в каталоге about</a></li>
+                    <li class="mb-2"><a href="../page.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+                    <li class="mb-2"><a href="../../page.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+                    <li class="mb-2">Это <a href="https://kubsu.ru/">контекстная ссылка</a> в тексте абзаца</li>
+                    <li class="mb-2"><a href="https://wikipedia.org/wiki/HTML#History">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                    <li class="mb-2">
+                        <p>Ссылка из областей картинки</p>
+                        <img src="image1.jpg" alt="Картинка с разными областями" class="img-fluid" usemap="#car">
+                        <map name="car">
+                            <area shape="rect" href="https://kubsu.ru/" coords="0,0,150,150" alt="rect">
+                            <area shape="circle" href="https://www.kubsu.ru/news" coords="225,150,150" alt="circle">
+                        </map>
+                    </li>
+                    <li class="mb-2">Ссылка с пустым href<a href="" class="ml-1">Cсылка</a></li>
+                    <li class="mb-2">Ссылка без href<a class="ml-1">Ссылка</a></li>
+                    <li class="mb-2">Ссылка с запретом перехода для поисковиков<a href="https://kubsu.ru/no-follow" rel="nofollow" class="ml-1">Ссылка</a></li>
+                    <li class="mb-2"><a href="https://kubsu.ru/" rel="noindex">Запрещенная для индексации поисковиками</a></li>
+                    <li class="mb-2">
+                        Нумерованный список ссылок с подписями title:
+                        <ol class="mt-2">
+                            <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
+                            <li><a href="https://kubsu.ru/university" title="Информация об университете">Об университете</a></li>
+                            <li><a href="https://kubsu.ru/education" title="Образовательные программы">Образование</a></li>
+                        </ol>
+                    </li>
+                    <li class="mb-2"><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+                </ol>
+            </section>
+
+            <section class="col-12 table-section p-4 mb-4">
                 <h2 class="section-title">Таблица факультетов</h2>
-                <div class="table-container">
-                    <table class="data-table">
+                <div class="table-responsive">
+                    <table class="table table-bordered data-table">
                         <thead>
                         <tr>
                             <th>Факультет</th>
@@ -48,21 +162,18 @@
                             <td>Компьютерных технологий и прикладной математики</td>
                             <td>Колотий А.Д.</td>
                             <td>1000</td>
-
                             <td>100-200</td>
                         </tr>
                         <tr>
                             <td>Филологический</td>
                             <td>Сайченко В.В.</td>
                             <td>900</td>
-
                             <td>300-400</td>
                         </tr>
                         <tr>
                             <td>Журналистики</td>
                             <td>Касьянов В.В.</td>
                             <td>1100</td>
-
                             <td>500-600</td>
                         </tr>
                         <tr>
@@ -81,102 +192,51 @@
                             <td>Физико-технический</td>
                             <td>Строганова Е.В.</td>
                             <td>1000</td>
-
                         </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
-
-
-            <section class="links-section">
-                <h2>Ссылки</h2>
-                <ol class="links-list">
-                    <li><a href="http://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
-                    <li><a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
-                    <li><a href="https://kubsu.ru/"><img src="image.jpg" alt="КубГУ" width="350"></a></li>
-                    <li><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
-                    <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
-                    <li><a href="#form">Ссылка на фрагмент текущей страницы (форма)</a></li>
-                    <li><a href="https://kubsu.ru/?faculty=fctipm&area=mo&group=22">Ссылка с тремя параметрами</a></li>
-                    <li><a href="https://moodle.kubsu.ru/course/view.php?id=1">>Ссылка с параметром id в URL</a></li>
-                    <li><a href="page.html">Относительная на страницу в текущем каталоге</a></li>
-                    <li><a href="about/page.html">Относительная на страницу в каталоге about</a></li>
-                    <li><a href="../page.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
-                    <li><a href="../../page.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
-                    <li>Это <a href="https://kubsu.ru/">контекстная ссылка</a> в тексте абзаца</li>
-                    <li><a href="https://wikipedia.org/wiki/HTML#History">Ссылка на фрагмент страницы стороннего сайта</a></li>
-                    <li>
-                        <p>Ссылка из областей картинки</p>
-                        <img src="image1.jpg" alt="Картинка с разными областями" usemap="#car"
-                             width="300" height="300">
-                        <map name="car">
-                            <area shape="rect" href="https://kubsu.ru/" coords="0,0,1100,1100" alt="rect">
-                            <area shape="circle" href="https://www.kubsu.ru/news" coords="1650,800,550" alt="circle">
-                        </map>
-
-                    </li>
-                    <li>Ссылка с пустым href<a href="">Cсылка</a></li>
-                    <li>Ссылка без href<a>Ссылка</a></li>
-                    <li>Ссылка с запретом перехода для поисковиков<a href="https://kubsu.ru/no-follow" rel="nofollow">Ссылка</a></li>
-                    <li><a href="https://kubsu.ru/" rel="noindex">Запрещенная для индексации поисковиками</a></li>
-                    <li>
-                        Нумерованный список ссылок с подписями title:
-                        <ol>
-                            <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
-
-                            <li><a href="https://kubsu.ru/university" title="Информация об университете">Об университете</a></li>
-                            <li><a href="https://kubsu.ru/education" title="Образовательные программы">Образование</a></li>
-                        </ol>
-                    </li>
-                    <li><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
-                </ol>
-            </section>
         </div>
+        
+        <section class="form-section p-4" id="form">
+            <h2 class="section-title">Форма обратной связи</h2>
+            <form action="/" method="post">
+                <div class="form-group">
+                    <label for="name">ФИО:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="ФИО" required>
+                </div>
 
-        <h2>Форма обратной связи</h2>
+                <div class="form-group">
+                    <label for="tel">Телефон:</label>
+                    <input type="tel" class="form-control" id="tel" name="tel" placeholder="+7 (999) 999-99-99" required>
+                </div>
 
-        <form action="/" method="post">
-            <div>
-                <label>ФИО:
-                    <input type="text" name="name" placeholder="ФИО" required>
-                </label>
-            </div>
-            <br>
-            <div>
-                <label>Телефон:
-                    <input type="tel" name="tel" placeholder="+7 (999) 999-99-99" required>
-                </label>
-            </div>
-            <br>
-            <div>
-                <label>Email:
-                    <input type="email" name="email" placeholder="...mail.ru" required>
-                </label>
-            </div>
-            <br>
-            <div>
-                <label>День рождения:
-                    <input type="date" name="birthday" value="" required>
-                </label>
-            </div>
-            <br>
-            <div>
-                Пол:
-                <label>
-                    <input type="radio" checked name="sex" value="Мужской">
-                    Мужской
-                </label>
-                <label>
-                    <input type="radio" name="sex" value="Женский">
-                    Женский
-                </label>
-            </div>
-            <br>
-            <div>
-                <label>
-                    Любимые языкы программирования: <br>
-                    <select name="lang" multiple="multiple" size="11" required>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="...mail.ru" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthday">День рождения:</label>
+                    <input type="date" class="form-control" id="birthday" name="birthday" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Пол:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" checked name="sex" id="male" value="Мужской">
+                        <label class="form-check-label" for="male">Мужской</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sex" id="female" value="Женский">
+                        <label class="form-check-label" for="female">Женский</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="lang">Любимые языки программирования:</label>
+                    <select class="form-control" id="lang" name="lang" multiple size="6" required>
                         <option value="Pascal">Pascal</option>
                         <option value="C">C</option>
                         <option value="Cpp" selected>C++</option>
@@ -189,25 +249,32 @@
                         <option value="Prolog">Prolog</option>
                         <option value="Scala">Scala</option>
                     </select>
-                </label>
-            </div>
-            <br>
-            <div>
-                <label>Биография: <br>
-                    <textarea cols="50" rows="5" required></textarea>
-                </label>
-            </div>
-            <div>
-                <label><input type="checkbox" name="check-1" required>
-                    C контрактом ознакомлен(а)</label>
-            </div>
-            <div>
-                <button type="submit" style="margin: 10px;">Сохранить</button>
-            </div>
-        </form>
+                    <small class="form-text text-muted">Для выбора нескольких вариантов используйте Ctrl+Click</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="biography">Биография:</label>
+                    <textarea class="form-control" id="biography" name="biography" rows="5" required></textarea>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="contract" name="check-1" required>
+                    <label class="form-check-label" for="contract">С контрактом ознакомлен(а)</label>
+                </div>
+
+                <button type="submit" class="btn btn-success">Сохранить</button>
+            </form>
+        </section>
     </div>
 </main>
-        <p>&copy;2025 Болобан Анастасия. Кубанский Государственный Университет</p>
+
+<footer class="site-footer py-4 mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="mb-0">&copy;2025 Болобан Анастасия. Кубанский Государственный Университет</p>
+            </div>
+        </div>
     </div>
 </footer>
 </body>
